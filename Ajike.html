@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Harmeedat!</title>
+    <link rel="stylesheet" href="Ajike.css">
+</head>
+<body>
+    <div class="banner">Happy Birthday, Dear Harmeedat Aanuoluwapo O.</div>
+    <h2 class="message"><p>Wishing you life full of Allah's blessings, abundant grace, sound health, unlimited wealth and great acheivements as you attained another milestone in age today. <br> Your constant encouragement and support have been a source of strength, and I appreciate the way you care for me and those around us. You have touched my heart in countless ways, and I am blessed to have you by my side. <br> I cherish the moments we have together, and I'm grateful for the light and love you bring into my life. May our relationship continue to grow stronger through our understanding and compassion for each other. </p>
+    <p>Have a prosperous year, Masoyina</p></h2>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="Ajike 1.jpg" alt="Image 1">
+            <div class="caption">Message for Image 1</div>
+        </div>
+        <div class="mySlides">
+            <img src="Ajike 2.jpg" alt="Image 2">
+            <div class="caption">Message for Image 2</div>
+        </div>
+        <div class="mySlides">
+        	<img src="Ajike 3.jpg" alt="Image 3">
+        	<div class="caption">Message for Image 3</div>
+        </div>
+        <div class="mySlides">
+        	<img src="Ajike 4.jpg" alt="Image 3">
+        	<div class="caption">Message for Image 4</div>
+        </div>
+        <div class="mySlides">
+        	<img src="Ajike 5.jpg" alt="Image 5">
+        	<div class="caption">Messgae for Image 5</div>
+        </div>
+        <div class="mySlides">
+        	<img src="Ajike 6.jpg" alt="Image 6">
+        	<div class="caption">Messgae for Image 6</div>
+        </div>
+        <div class="mySlides">
+        	<img src="Ajike 7.jpg" alt="Image 7">
+        	<div class="caption">Message for Image 7</div>
+        </div>
+	</div>
+    <script src="Ajike.js"></script>
+    <button onclick="readPage()">Listen to the Message</button>
+    
+    <script>
+    function readPage() {
+    // Get all the text content from the webpage (not ideal for complex layouts)
+    var content = document.body.textContent;
+    
+    // Trigger the browser's text-to-speech functionality
+    if (window.speechSynthesis) {
+    var utterance = new SpeechSynthesisUtterance(content);
+    window.speechSynthesis.speak(utterance);
+    } else {
+    alert("Your browser doesn't support text-to-speech.");
+    }
+    }
+    </script>
+    
+    
+ <footer class="footer">
+    &copy; Harmeedat 2024
+    </footer>
+</body>
+</html>
